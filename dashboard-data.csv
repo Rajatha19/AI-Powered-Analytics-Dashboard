@@ -1,0 +1,4 @@
+user,email,status
+Alice,alice@example.com,Active
+Bob,bob@example.com,Inactive
+Charlie,charlie@example.com,Active
