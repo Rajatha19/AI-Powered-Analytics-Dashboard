@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## AI-Powered Analytics Dashboard
+A modern, responsive, and feature-rich analytics dashboard built with Next.js 14+ App Router. The dashboard provides AI-assisted digital marketing insights with:
 
-## Getting Started
+Real-time updating metrics
 
-First, run the development server:
+Interactive charts (line, bar, pie)
+
+Advanced data tables with sorting, pagination, and export (CSV/PDF)
+
+Date range filtering
+
+Dark/light mode toggle with smooth theme transitions
+
+Loading skeletons for a polished UX
+
+Setup Instructions
+Prerequisites
+Node.js v18 or higher
+
+npm or yarn package managers
+
+Git installed for cloning and version control
 
 ```bash
+# Clone the Repository
+git clone https://github.com/Rajatha19/AI-Powered-Analytics-Dashboard.git
+cd AI-Powered-Analytics-Dashboard
+
+# Install Dependencies
+npm install
+# or
+yarn install
+
+# Run in Development Mode
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Deployment
+The project is optimized for deployment on Vercel:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Push your repo to GitHub.
 
-## Learn More
+Import into Vercel.
 
-To learn more about Next.js, take a look at the following resources:
+Automatic builds and deployments on push.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+vercel : https://vercel.com/rajathas-projects-5b06626f/ai-powered-analytics-dashboard/EBa6WpdetGFi1qFso3kKCtj5HLHZ
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Feature Overview
+Real-time Updates: Metrics refresh automatically every 4 seconds, simulating live data changes using React state and effects.
 
-## Deploy on Vercel
+Interactive Charts: Line, bar, and pie charts built with Recharts allow intuitive data visualization and comparison.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Advanced Data Table: Powered by @tanstack/react-table with sorting, pagination, and comprehensive export functionality (CSV and PDF).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Date Range Filtering: Enables users to filter chart and table data dynamically based on selected date intervals using react-date-range.
+
+Dark/Light Mode Support: Seamless toggle with next-themes package, implementing theme persistence and SSR-safe hydration.
+
+Loading Skeletons: Smooth animated skeleton components using Framer Motion enhance perceived performance during data fetching.
+
+Clean Code Architecture: Modular components, TypeScript typings, and maintainable structure for easy scalability.
+
