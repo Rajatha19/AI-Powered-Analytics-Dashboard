@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { DateRange, Range, RangeKeyDict } from "react-date-range";
+import { DateRange, RangeKeyDict } from "react-date-range";
 import "react-date-range/dist/styles.css";
 import "react-date-range/dist/theme/default.css";
 
@@ -26,12 +26,8 @@ export default function DateRangeFilter({
 
   function handleRangeChange(ranges: RangeKeyDict) {
     const selection = ranges.selection;
-
-    // Make sure startDate and endDate are defined before use
     if (selection.startDate && selection.endDate) {
-      // Update local state
       setRange([selection as DateRangeSelection]);
-      // Call parent's callback with guaranteed non-undefined dates
       onChange({ startDate: selection.startDate, endDate: selection.endDate });
     }
   }
